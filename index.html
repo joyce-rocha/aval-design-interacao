@@ -9,12 +9,20 @@
   <body>
     <header>
       <div class="container">
-        <img id="logo" src="images/logo.png" alt="RTS Climatização Logo" />
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre Nós</a></li>
             <li><a href="#services">Serviços</a></li>
+            <li>
+              <a href="#home"
+                ><img
+                  id="logo"
+                  src="images/logo.png"
+                  alt="RTS Climatização Logo"
+              /></a>
+            </li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#discounts">Descontos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
@@ -23,11 +31,15 @@
 
     <section id="home">
       <div class="container">
-        <h2>Bem-vindo à RTS Climatização</h2>
-        <p>
-          Sua melhor escolha para instalação, manutenção e reparo de sistemas de
-          climatização.
-        </p>
+        <img
+          id="inicial"
+          src="images/inicial.jpg"
+          alt="homem consertando aparelho de ar"
+        />
+        <div class="intro-text">
+          <h2>Desde 2015 oferecendo o melhor serviço da região!</h2>
+          <h4>Oferecemos também serviços de emergência!</h4>
+        </div>
       </div>
     </section>
 
@@ -37,25 +49,83 @@
         <p>
           A RTS Climatização oferece serviços especializados em instalação e
           manutenção de ar condicionados. Nossa equipe é altamente qualificada e
-          pronta para atender você.
+          pronta para atender você. Estamos desde 2015 oferecendo serviço de
+          qualidade na Baixada Cuiabana.
         </p>
       </div>
     </section>
 
     <section id="services">
       <div class="container">
-        <h2>Nossos Serviços</h2>
+        <h2>Serviços</h2>
         <ul>
           <li>Instalação de Ar Condicionado</li>
           <li>Manutenção Preventiva</li>
+          <li>Limpeza</li>
           <li>Reparos</li>
+          <li>Serviço 24h</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="carousel">
+      <div class="container">
+        <h2>Galeria de Fotos</h2>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image1.jpg" alt="Imagem 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/image2.jpg" alt="Imagem 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/image3.webp" alt="Imagem 3" />
+            </div>
+          </div>
+          <button class="carousel-control prev" onclick="prevSlide()">
+            &#10094;
+          </button>
+          <button class="carousel-control next" onclick="nextSlide()">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <div class="container">
+        <h2>O que nossos clientes estão falando</h2>
+        <div class="reviews">
+          <p>
+            "Excelente serviço! Muito profissional e eficiente." - João Silva
+          </p>
+          <p>"Recomendo a todos! Atendimento de qualidade." - Maria Oliveira</p>
+          <p>
+            "Os melhores em climatização. Solucionaram meu problema
+            rapidamente." - Carlos Souza
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="discounts">
+      <div class="container">
+        <h2>Descontos</h2>
+        <p>10% para profissionais da segurança pública</p>
+        <p>10% para profissionais da saúde pública</p>
+        <p>10% para profissionais da educação pública</p>
+        <p>10% para aposentados</p>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
         <h2>Contato</h2>
+        <h3>
+          Chame-nos no Whatsapp: (65) 98108-1345 ou contacte-nos através desse
+          formulário:
+        </h3>
         <form id="contact-form">
           <label for="name">Nome:</label>
           <input type="text" id="name" name="name" required />
