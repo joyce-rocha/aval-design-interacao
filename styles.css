@@ -1,189 +1,80 @@
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Varela Round", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f4f8fb;
   color: #04578c;
   font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro-text {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
   background-color: #b9d9eb;
-  padding: 1rem 0;
 }
 
 #logo {
-  height: 200px;
+  height: 120px; /* Tamanho maior para o logo */
+  width: auto; /* Proporção mantida */
   vertical-align: middle;
+}
+
+.nav-link {
+  font-size: 1.2rem; /* Ajuste do tamanho do texto dos links */
+  font-weight: bold;
+  color: #04578c;
+}
+
+.nav-link:hover {
+  color: #002b5e;
 }
 
 #inicial {
   max-width: 600px;
-}
-
-#home {
-  padding-right: 30%;
-  padding-left: 30%;
-}
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: #04578c;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #002b5e;
-}
-
-section {
-  padding: 2rem 0;
-}
-
-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-#home .intro-text {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-#home img {
-  display: block;
-  width: 100%;
   height: auto;
-  margin-bottom: 1rem;
 }
 
-#review .reviews,
-#discounts ul {
-  text-align: center;
+.carousel-img {
+  width: 100%;
+  height: 400px; /* Definindo uma altura fixa para as imagens do carrossel */
+  object-fit: cover; /* Assegura que a imagem preencha o espaço sem distorção */
 }
 
-#review .reviews p,
-#discounts ul li {
-  margin: 1rem 0;
-  font-size: 1.2rem;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo escuro para os ícones de controle */
 }
 
 footer {
   background-color: #04578c;
   color: white;
-  text-align: center;
-  padding: 1rem 0;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  margin-top: 2rem;
 }
 
-form label {
-  margin-top: 1rem;
+.form-control {
+  border-radius: 0.25rem;
 }
 
-form input,
-form textarea {
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1.2rem;
-}
-
-form button {
-  margin-top: 1rem;
-  padding: 0.5rem;
+.btn-primary {
+  background-color: #04578c;
   border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 1.2rem;
 }
 
-form button:hover {
-  background-color: #555;
-}
-
-#carousel {
-  padding: 2rem 0;
-}
-
-#carousel .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.carousel {
-  position: relative;
-  max-width: 80%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 1rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.carousel-control.prev {
-  left: 0;
-}
-
-.carousel-control.next {
-  right: 0;
+.btn-primary:hover {
+  background-color: #033e5c;
 }
